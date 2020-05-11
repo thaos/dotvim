@@ -8,6 +8,7 @@ call plug#begin('~/.vim/plugged')
 " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-fugitive'
+Plug 'liuchengxu/vim-which-key'
 Plug 'jalvesaq/Nvim-R'
 Plug 'jpalardy/vim-slime'
 Plug 'vim-airline/vim-airline'
