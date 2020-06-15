@@ -8,12 +8,13 @@ call plug#begin('~/.vim/plugged')
 " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-fugitive'
-Plug 'liuchengxu/vim-which-key'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+" Plug 'liuchengxu/vim-which-key'
 Plug 'jalvesaq/Nvim-R'
-Plug 'jpalardy/vim-slime'
+" Plug 'jpalardy/vim-slime'
 Plug 'vim-airline/vim-airline'
 Plug 'NLKNguyen/papercolor-theme'
-Plug 'autozimu/LanguageClient-neovim', {
+" Plug 'autozimu/LanguageClient-neovim', {
   \ 'branch': 'next',
   \ 'do': 'bash install.sh',
   \ }
@@ -34,8 +35,8 @@ Plug 'autozimu/LanguageClient-neovim', {
 " Initialize plugin system
 call plug#end()
 source ~/.config/nvim/dotvim/general.vim
-source ~/.config/nvim/dotvim/vim-slime.vim
-source ~/.config/nvim/dotvim/languageclient-nvim.vim
+" source ~/.config/nvim/dotvim/vim-slime.vim
+" source ~/.config/nvim/dotvim/languageclient-nvim.vim
 " source ~/.config/nvim/dotvim/deoplete.vim
-" source ~/.config/nvim/dotvim/nvim-r.vim
+source ~/.config/nvim/dotvim/nvim-r.vim
 " source ~/.config/nvim/dotvim/coc.vim
